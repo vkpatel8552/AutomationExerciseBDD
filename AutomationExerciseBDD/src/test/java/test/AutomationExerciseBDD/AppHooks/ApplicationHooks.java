@@ -11,8 +11,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import test.AutomationExerciseBDD.Pages.StartUpPage;
-import test.AutomationExerciseBDD.Utils.Efficacies;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.Efficacies;
+import test.automationframework.Utils.WebDriverUtils;
 
 import org.assertj.core.api.SoftAssertions;
 

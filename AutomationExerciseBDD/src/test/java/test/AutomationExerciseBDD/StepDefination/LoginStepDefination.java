@@ -12,8 +12,8 @@ import test.AutomationExerciseBDD.AppHooks.ApplicationHooks;
 import test.AutomationExerciseBDD.Pages.HomePage;
 import test.AutomationExerciseBDD.Pages.LoginPage;
 import test.AutomationExerciseBDD.Pages.StartUpPage;
-import test.AutomationExerciseBDD.Utils.Efficacies;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.Efficacies;
+import test.automationframework.Utils.WebDriverUtils;
 
 public class LoginStepDefination {
 

@@ -6,7 +6,7 @@ import test.AutomationExerciseBDD.AppHooks.ApplicationHooks;
 import test.AutomationExerciseBDD.Pages.HomePage;
 import test.AutomationExerciseBDD.Pages.MyWishListPage;
 import test.AutomationExerciseBDD.Pages.WomenPage;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.WebDriverUtils;
 
 public class WomenStepDefination {
 

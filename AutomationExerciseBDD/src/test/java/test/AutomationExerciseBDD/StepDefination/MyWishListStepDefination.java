@@ -2,7 +2,7 @@ package test.AutomationExerciseBDD.StepDefination;
 
 import io.cucumber.java.en.Then;
 import test.AutomationExerciseBDD.Pages.MyWishListPage;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.WebDriverUtils;
 
 public class MyWishListStepDefination {
 

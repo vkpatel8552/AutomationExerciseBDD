@@ -1,17 +1,22 @@
 package test.AutomationExerciseBDD.Pages;
 
+import java.util.Properties;
+
+import javax.mail.Message;
+import javax.mail.Session;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import test.AutomationExerciseBDD.Utils.NGHelper;
-
+import test.automationframework.Utils.Efficacies;
+import test.automationframework.Utils.EmailTestExecutionReports;
+import test.automationframework.Utils.NGHelper;
 
 public class StartUpPage {
 
 	public WebDriver driver;
-	public WebDriverWait wbwait;
 	public NGHelper ngHelper;
+
 	public static int unitTime = 1;
 	public static int sleepWait = 3;
 	public static int minWaitTime = 30;
@@ -24,7 +29,7 @@ public class StartUpPage {
 	}
 
 	public StartUpPage() {
-
+		
 	}
 
 	public HomePage navigateToPage(String url) throws Exception {
@@ -36,4 +41,5 @@ public class StartUpPage {
 		if (driver != null)
 			driver.quit();
 	}
+	
 }

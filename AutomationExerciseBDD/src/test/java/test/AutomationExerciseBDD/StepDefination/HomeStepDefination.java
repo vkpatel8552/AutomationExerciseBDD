@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import test.AutomationExerciseBDD.AppHooks.ApplicationHooks;
 import test.AutomationExerciseBDD.Pages.HomePage;
 import test.AutomationExerciseBDD.Pages.ProductDetailsPage;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.WebDriverUtils;
 
 public class HomeStepDefination {
 

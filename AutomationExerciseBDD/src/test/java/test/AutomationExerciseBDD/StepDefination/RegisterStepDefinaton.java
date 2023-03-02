@@ -12,7 +12,7 @@ import test.AutomationExerciseBDD.Pages.HomePage;
 import test.AutomationExerciseBDD.Pages.LoginPage;
 import test.AutomationExerciseBDD.Pages.MyAccountPage;
 import test.AutomationExerciseBDD.Pages.RegisterUserPage;
-import test.AutomationExerciseBDD.Utils.WebDriverUtils;
+import test.automationframework.Utils.WebDriverUtils;
 
 public class RegisterStepDefinaton {
 

@@ -11,26 +11,30 @@
 	<name>AutomationExerciseBDD</name>
 	<url>http://maven.apache.org</url>
 
-
 	<properties>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<junit.version>4.13.1</junit.version>
 		<cucumber.version>6.9.0</cucumber.version>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
-
 	</properties>
 
 	<dependencies>
-
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>test</groupId>
+			<artifactId>automationframework</artifactId>
+			<version>1.0</version>
+			<systemPath>${project.basedir}/frameworkJar/automationframework-1.0.jar</systemPath>
+			<scope>system</scope>
 		</dependency>
 
 		<dependency>
@@ -47,17 +51,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.8.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.3.1</version>
-		</dependency>
 
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
@@ -73,6 +66,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.3.1</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
 		<dependency>
 			<groupId>com.sun.mail</groupId>
@@ -80,12 +85,6 @@
 			<version>1.6.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>2.0.27</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -124,7 +123,7 @@
 								<include>**/testRunner.java</include>
 							</includes>
 							<parallel>methods</parallel>
-							<threadCount>6</threadCount>
+							<threadCount>4</threadCount>
 							<perCoreThreadCount>false</perCoreThreadCount>
 						</configuration>
 					</execution>
@@ -144,9 +143,14 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>test.AutomationExerciseBDD.Utils.EmailTestExecutionReports</mainClass>
+					<classpathScope>test</classpathScope>
+					<mainClass>${project.groupId}.${project.artifactId}.TestRunner.testRunner</mainClass>
+					<arguments>
+						<argument>emailConfig.properties</argument>
+					</arguments>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
