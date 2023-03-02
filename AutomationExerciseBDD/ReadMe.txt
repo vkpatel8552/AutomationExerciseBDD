@@ -42,3 +42,6 @@ extent.reporter.pdf.out=test-output/PdfReport/<Pdf report name>
 
 PS: pdf report name should be same under emailConfig and extent.properties file
 ======================================================================================
+
+PS: Make sure to copy latset framework jar under <Project Directory>/frameworkJar folder with name
+automationframework-1.0.jar

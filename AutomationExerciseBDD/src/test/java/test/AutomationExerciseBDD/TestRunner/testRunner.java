@@ -21,6 +21,8 @@ import test.automationframework.Utils.EmailTestExecutionReports;
 
 public class testRunner {
 	public static void main(String[] args) throws Exception {
+		
+		// Email sent logic. Main method called using plugins added under pom.xml 
 		Properties emailProperty = new Efficacies().loadPropertyFile(args[0]);
 		EmailTestExecutionReports email = new EmailTestExecutionReports(emailProperty);
 		Session session = email.setBasicEmailConfiguration()
