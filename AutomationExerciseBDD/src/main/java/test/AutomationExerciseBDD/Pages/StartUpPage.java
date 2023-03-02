@@ -1,15 +1,8 @@
 package test.AutomationExerciseBDD.Pages;
 
-import java.util.Properties;
-
-import javax.mail.Message;
-import javax.mail.Session;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import test.automationframework.Utils.Efficacies;
-import test.automationframework.Utils.EmailTestExecutionReports;
 import test.automationframework.Utils.NGHelper;
 
 public class StartUpPage {
