@@ -12,7 +12,7 @@ import test.automationframework.Utils.Efficacies;
 import test.automationframework.Utils.EmailTestExecutionReports;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/features"}, 
+@CucumberOptions(features = { "src/test/features/MenFeature"}, 
 		glue = { "test.AutomationExerciseBDD.StepDefination",
 				"test.AutomationExerciseBDD.AppHooks" },
 		plugin = { "pretty",
@@ -28,7 +28,7 @@ public class testRunner {
 		Session session = email.setBasicEmailConfiguration()
 							   .createNewEmailSession();
 		Message msg = email.setEmailMsgContent(session);
-		email.sendEmail(msg, emailProperty.getProperty("pdfReport"));
+		email.sendEmail(msg, emailProperty.getProperty("executionReport"));
 	}
 
 }
