@@ -12,7 +12,7 @@ import test.automationframework.Notification.EmailTestExecutionReports;
 import test.automationframework.Utils.Efficacies;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/features/MenFeature"}, 
+@CucumberOptions(features = { "src/test/features"}, 
 		glue = { "test.AutomationExerciseBDD.StepDefination",
 				"test.AutomationExerciseBDD.AppHooks" },
 		plugin = { "pretty",
