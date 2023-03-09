@@ -8,8 +8,8 @@ import javax.mail.Session;
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import test.automationframework.Notification.EmailTestExecutionReports;
 import test.automationframework.Utils.Efficacies;
-import test.automationframework.Utils.EmailTestExecutionReports;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "src/test/features/MenFeature"}, 
