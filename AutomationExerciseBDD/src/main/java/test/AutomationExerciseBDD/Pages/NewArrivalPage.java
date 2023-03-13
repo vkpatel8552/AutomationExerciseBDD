@@ -22,7 +22,7 @@ public class NewArrivalPage extends StartUpPage{
 	}
 	
 	public NewArrivalPage waitForNewArrivalPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("What's New Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("What's New", maxWaitTime)
 				.waitTillElementIsVisible(newArrivalPageHeader, maxWaitTime);
 		return PageFactory.initElements(driver, NewArrivalPage.class);
 	}	

@@ -29,7 +29,7 @@ public class MyWishListPage extends StartUpPage{
 	}
 	
 	public MyWishListPage waitForMyWishListPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("My Wish List Magento Commerce ", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("My Wish List", maxWaitTime)
 				.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime);
 		return PageFactory.initElements(driver, MyWishListPage.class);
 	}

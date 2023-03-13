@@ -4,7 +4,7 @@ Background:
 	Given user is on Home page 
 
 Scenario: TestCase8: Verify First Products details from New Arrival Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on WhatsNew link
 	Then NewArrival Page Header "What's New" is visible
 	Then user scrolls to Latest Collection section
@@ -21,7 +21,7 @@ Scenario: TestCase8: Verify First Products details from New Arrival Page
 		|Full Zip, Sweatshirt, Hoodie|Cotton, Polyester|Solid|Cool, Indoor, Mild|
 		
 Scenario: TestCase9: Add Specific product into cart from Latest Collection section
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on WhatsNew link
 	Then NewArrival Page Header "What's New" is visible
 	Then user scrolls to Latest Collection section

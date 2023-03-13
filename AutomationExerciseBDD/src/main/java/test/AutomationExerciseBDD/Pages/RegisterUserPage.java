@@ -25,7 +25,7 @@ public class RegisterUserPage extends StartUpPage{
 	}
 	
 	public RegisterUserPage waitForRegisterUserPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("Create New Customer Account Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("Create New Customer Account", maxWaitTime)
 				.waitTillElementIsVisible(defaultWelMsg, maxWaitTime);
 		return PageFactory.initElements(driver, RegisterUserPage.class);
 	}	

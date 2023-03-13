@@ -22,7 +22,7 @@ public class MenPage extends StartUpPage {
 	}
 	
 	public MenPage waitForMenPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("Men Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("Men", maxWaitTime)
 				.waitTillElementIsVisible(menPageHeader, maxWaitTime);
 		return PageFactory.initElements(driver, MenPage.class);
 	}	

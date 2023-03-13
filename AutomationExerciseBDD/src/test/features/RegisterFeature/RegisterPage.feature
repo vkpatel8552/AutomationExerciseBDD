@@ -4,7 +4,7 @@ Background:
 	Given user is on Home page 
 
 Scenario: TestCase6: Register New User by clicking on Create an account link from Home Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Create an Account Link
 	Then "Create New Customer Account" header is visible under Create user page
 	And user enters all personal information
@@ -16,7 +16,7 @@ Scenario: TestCase6: Register New User by clicking on Create an account link fro
 	Then Verify  that 'Welcome, Rodricks Smith!' is visible
 
 Scenario: TestCase7: Register New User by clicking on Create an account link from Login Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Loging Link
 	Then Login Page Header "Customer Login" is visible
 	Then user clicks on Create an Account Button under Login Page

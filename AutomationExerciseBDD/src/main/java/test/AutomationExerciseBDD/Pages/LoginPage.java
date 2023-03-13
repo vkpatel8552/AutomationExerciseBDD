@@ -31,7 +31,7 @@ public class LoginPage extends StartUpPage {
 	}
 
 	public LoginPage waitForLoginPageToLoad() throws Exception {
-		ngHelper.waitTillPageTitleContains("Customer Login Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("Customer Login", maxWaitTime)
 				.waitTillElementIsVisible(loginPageHeader, maxWaitTime);
 		return PageFactory.initElements(driver, LoginPage.class);
 	}

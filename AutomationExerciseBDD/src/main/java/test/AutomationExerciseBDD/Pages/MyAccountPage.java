@@ -22,7 +22,7 @@ public class MyAccountPage extends StartUpPage{
 	}
 	
 	public MyAccountPage waitForMyAccountPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("My Account Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("My Account", maxWaitTime)
 				.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime);
 		return PageFactory.initElements(driver, MyAccountPage.class);
 	}

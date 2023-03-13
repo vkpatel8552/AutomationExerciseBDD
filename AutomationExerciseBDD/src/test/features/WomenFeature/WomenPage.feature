@@ -4,7 +4,7 @@ Background:
 	Given user is on Home page 
 
 Scenario: TestCase10: Verify First Products details from Women Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Women link
 	Then Women Page Header "Women" is visible
 	Then user scrolls to Hot Seller section

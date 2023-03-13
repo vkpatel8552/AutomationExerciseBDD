@@ -4,7 +4,7 @@ Background:
 	Given user is on Home page 
 
 Scenario: TestCase15: Add Specific product into CompareList from Men Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Men link
 	Then Men Page Header "Men" is visible
 	Then user scrolls to Hot Seller section

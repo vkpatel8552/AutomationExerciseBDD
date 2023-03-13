@@ -22,7 +22,7 @@ public class WomenPage extends StartUpPage {
 	}
 	
 	public WomenPage waitForWomenPageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("Women Magento Commerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("Women", maxWaitTime)
 				.waitTillElementIsVisible(womenPageHeader, maxWaitTime);
 		return PageFactory.initElements(driver, WomenPage.class);
 	}	

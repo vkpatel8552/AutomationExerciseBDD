@@ -4,7 +4,7 @@ Background:
 	Given user is on Home page 
 
 Scenario: TestCase4: Verify First Products details from Hot Seller section on HomePage
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user scrolls to Hot Sellers section
 	Then "Hot Sellers" header is visible
 	And user clicks on first product
@@ -21,7 +21,7 @@ Scenario: TestCase4: Verify First Products details from Hot Seller section on Ho
 	And verify 'Customer Reviews' header shown under Reviews tab
 	
 Scenario: TestCase5: Add First product into cart from Hot Seller section
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user scrolls to Hot Sellers section
 	Then "Hot Sellers" header is visible
 	And user clicks on "Hero Hoodie" Product

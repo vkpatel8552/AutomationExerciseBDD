@@ -59,7 +59,7 @@ public class HomePage extends StartUpPage{
 	}
 	
 	public HomePage waitForHomePageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleContains("Home Page - Magento eCommerce", maxWaitTime)
+		ngHelper.waitTillPageTitleContains("Home Page", maxWaitTime)
 				.waitTillElementIsVisible(defaultWelMsg, maxWaitTime);
 		return PageFactory.initElements(driver, HomePage.class);
 	}	
