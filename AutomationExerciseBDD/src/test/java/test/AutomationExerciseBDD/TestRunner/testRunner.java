@@ -17,7 +17,8 @@ import test.automationframework.Utils.Efficacies;
 				"test.AutomationExerciseBDD.AppHooks" },
 		plugin = { "pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"timeline:test-output-thread/" })
+				"timeline:test-output-thread/",
+				"rerun:target/failedrerun.txt"})
 
 public class testRunner {
 	public static void main(String[] args) throws Exception {

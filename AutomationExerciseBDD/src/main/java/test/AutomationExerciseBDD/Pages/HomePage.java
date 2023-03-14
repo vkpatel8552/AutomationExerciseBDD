@@ -65,7 +65,8 @@ public class HomePage extends StartUpPage{
 	}	
 
 	public HomePage waitForHomePageWithLoggedInUserToLoad() throws Exception {
-		ngHelper.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime);
+		ngHelper.waitTillElementIsInvisible(defaultUserName, highWaitTime)
+				.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime);
 		return PageFactory.initElements(driver, HomePage.class);
 	}
 	

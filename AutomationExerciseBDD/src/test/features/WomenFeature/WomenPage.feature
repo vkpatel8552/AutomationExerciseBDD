@@ -23,7 +23,7 @@ Scenario: TestCase10: Verify First Products details from Women Page
 	And verify 'Customer Reviews' header shown under Reviews tab
 	
 Scenario: TestCase11: Add Specific product into cart from Women Page
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Women link
 	Then Women Page Header "Women" is visible
 	Then user scrolls to Hot Seller section
@@ -37,7 +37,7 @@ Scenario: TestCase11: Add Specific product into cart from Women Page
 	And verify shopping cart shows "2" items
 	
 Scenario: TestCase12: Add Specific product into Wishlist from Women Page without login
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Women link
 	Then Women Page Header "Women" is visible
 	Then user scrolls to Hot Seller section
@@ -50,10 +50,10 @@ Scenario: TestCase12: Add Specific product into Wishlist from Women Page without
 	Then Verify  Error Message 'You must login or register to add items to your wishlist.' is visible
 	
 Scenario: TestCase13: Add Specific product into Wishlist from Women Page with login
-	Given homepage launched with Page Title "Home Page - Magento eCommerce"
+	Given homepage launched with Page Title "Home Page"
 	When user clicks on Loging Link
 	Then Login Page Header "Customer Login" is visible
-	Then user enters "kk8989@gmail.com" and "test@123" 
+	Then user enters "kk1234@gmail.com" and "test@12345" 
 	And user clicks on Login button
 	Then Verify  that 'Welcome, kk patel!' is visible
 	When user clicks on Women link

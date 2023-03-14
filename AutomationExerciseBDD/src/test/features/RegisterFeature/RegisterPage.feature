@@ -12,7 +12,7 @@ Scenario: TestCase6: Register New User by clicking on Create an account link fro
 		|Rodricks|Smith|rodricksJr@gmail.com|rod@12345678|rod@12345678|
 	And user clicks on Create and Account Button
 	Then user account page visible with header 'My Account'
-	And verify 'Thank you for registering with Fake Online Clothing Store.' message displayed
+	And verify 'Thank you for registering with Main Website Store.' message displayed
 	Then Verify  that 'Welcome, Rodricks Smith!' is visible
 
 Scenario: TestCase7: Register New User by clicking on Create an account link from Login Page
@@ -26,5 +26,5 @@ Scenario: TestCase7: Register New User by clicking on Create an account link fro
 		|Rodricks|Smith|rodricksJr@gmail.com|rod@12345678|rod@12345678|
 	And user clicks on Create and Account Button
 	Then user account page visible with header 'My Account'
-	And verify 'Thank you for registering with Fake Online Clothing Store.' message displayed
+	And verify 'Thank you for registering with Main Website Store.' message displayed
 	Then Verify  that 'Welcome, Rodricks Smith!' is visible

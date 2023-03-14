@@ -18,9 +18,9 @@ public class HomeStepDefination {
 	@Given("homepage launched with Page Title {string}")
 	public void verify_home_page(String expectedPageTitle) throws Exception {
 		String actualPageTitle = homePage.getHomePageTitle();
-		ApplicationHooks.softAssertions.assertThat(expectedPageTitle)
+		ApplicationHooks.softAssertions.assertThat(actualPageTitle)
 				.as("Verifying Home Page Title content")
-				.isSubstringOf(actualPageTitle);
+				.isEqualTo(expectedPageTitle);
 	}
 
 	@When("user scrolls to Hot Sellers section")
