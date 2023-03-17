@@ -3,12 +3,14 @@ package test.AutomationExerciseBDD.Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import test.automationframework.UIFundamentals.Acolyte;
 import test.automationframework.Utils.NGHelper;
 
 public class StartUpPage {
 
 	public WebDriver driver;
 	public NGHelper ngHelper;
+	public Acolyte acolyte;
 
 	public static int unitTime = 1;
 	public static int sleepWait = 3;
@@ -19,6 +21,7 @@ public class StartUpPage {
 	public StartUpPage(WebDriver driver) {
 		this.driver = driver;
 		ngHelper = new NGHelper(driver);
+		acolyte = new Acolyte(driver);
 	}
 
 	public StartUpPage() {
