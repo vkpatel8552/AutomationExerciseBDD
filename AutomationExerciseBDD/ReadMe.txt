@@ -34,6 +34,8 @@ toEmail=<receiver email address , seperated>
 emailSubject=<Subject of email based on project your are working on>
 pdfReport=<Pdf report name>
 
+PS: pdfReport must contains .pdf extension
+
 Step2:
 src>>test>>resources>>extent.properties
 
