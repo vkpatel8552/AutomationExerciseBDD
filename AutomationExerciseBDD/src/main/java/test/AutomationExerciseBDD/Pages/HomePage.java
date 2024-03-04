@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class HomePage extends StartUpPage{
 
@@ -26,7 +27,7 @@ public class HomePage extends StartUpPage{
 	@FindBy(partialLinkText="Sign Out")
 	public WebElement logoutLnk;
 	
-	@FindBy(xpath="//li[contains(@class,'welcome')]//span[contains(text(),'Default welcome msg')]")
+	@FindBy(css="div.panel li.welcome>span.not-logged-in")
 	public WebElement defaultWelMsg;
 	
 	@FindBy(css="li.greet>span.not-logged-in")
@@ -51,7 +52,7 @@ public class HomePage extends StartUpPage{
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(new AjaxElementLocatorFactory(driver, maxWaitTime), this);
 	}
 	
 	public String getHomePageTitle() throws Exception {
@@ -83,7 +84,8 @@ public class HomePage extends StartUpPage{
 	}
 	
 	public String getLoggedInUser() throws Exception {
-		return ngHelper.waitTillElementIsVisible(loggedInUserName, maxWaitTime)
+		return ngHelper.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime)
+				       .waitTillElementIsVisible(loggedInUserName, maxWaitTime)
 					   .getInnerText(loggedInUserName);
 	}
 	

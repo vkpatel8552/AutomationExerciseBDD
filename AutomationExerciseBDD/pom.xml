@@ -29,6 +29,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.4.0</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -93,6 +100,14 @@
 			<version>1.6.2</version>
 		</dependency>
 
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.27</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -131,7 +146,7 @@
 								<include>**/testRunner.java</include>
 							</includes>
 							<parallel>methods</parallel>
-							<threadCount>5</threadCount>
+							<threadCount>3</threadCount>
 							<perCoreThreadCount>false</perCoreThreadCount>
 						</configuration>
 					</execution>
